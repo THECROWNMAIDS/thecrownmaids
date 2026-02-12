@@ -1,116 +1,225 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>The Crown Maids | House Cleaning in Charlotte, NC</title>
-  <meta name="description" content="The Crown Maids provides professional house cleaning in Charlotte, NC. Standard, deep, move-in/move-out, and Airbnb cleaning. Royalty-level cleaning without royal prices." />
-  <style>
-    :root { --bg:#0b0b10; --card:#12121a; --text:#f5f5ff; --muted:#c7c7dd; --line:#242437; }
-    *{ box-sizing:border-box; }
-    body{ margin:0; font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:radial-gradient(1200px 600px at 10% 0%, #2a1350, var(--bg)); color:var(--text); }
-    a{ color:inherit; text-decoration:none; }
-    .wrap{ max-width:980px; margin:0 auto; padding:24px; }
-    .nav{ display:flex; justify-content:space-between; align-items:center; gap:16px; padding:12px 0; }
-    .brand{ font-weight:800; letter-spacing:.2px; display:flex; align-items:center; gap:10px; }
-    .badge{ font-size:12px; padding:4px 10px; border:1px solid var(--line); border-radius:999px; color:var(--muted); background:rgba(255,255,255,.03); }
-    .btns{ display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
-    .btn{ padding:10px 14px; border-radius:12px; border:1px solid var(--line); background:rgba(255,255,255,.04); }
-    .btn.primary{ background:linear-gradient(135deg,#6d28d9,#f59e0b); border:none; color:#0b0b10; font-weight:700; }
-    .hero{ margin-top:18px; display:grid; grid-template-columns:1.2fr .8fr; gap:18px; }
-    @media (max-width:860px){ .hero{ grid-template-columns:1fr; } .btns{ justify-content:flex-start; } }
-    .card{ background:rgba(18,18,26,.92); border:1px solid var(--line); border-radius:18px; padding:18px; box-shadow:0 12px 30px rgba(0,0,0,.25); }
-    h1{ margin:0 0 8px; font-size:40px; line-height:1.1; }
-    .sub{ color:var(--muted); font-size:16px; margin:0 0 14px; }
-    .list{ display:grid; gap:10px; margin:14px 0 0; padding:0; list-style:none; }
-    .li{ display:flex; gap:10px; align-items:flex-start; }
-    .dot{ width:10px; height:10px; border-radius:50%; margin-top:6px; background:linear-gradient(135deg,#6d28d9,#f59e0b); }
-    .grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:18px; }
-    @media (max-width:860px){ .grid{ grid-template-columns:1fr; } }
-    .mini h3{ margin:0 0 6px; font-size:16px; }
-    .mini p{ margin:0; color:var(--muted); font-size:14px; }
-    .section{ margin-top:18px; }
-    .section h2{ margin:0 0 10px; font-size:20px; }
-    .muted{ color:var(--muted); }
-    .footer{ margin:22px 0 10px; color:var(--muted); font-size:13px; border-top:1px solid var(--line); padding-top:14px; }
-    .pillrow{ display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; }
-    .pill{ padding:8px 10px; border:1px solid var(--line); border-radius:999px; background:rgba(255,255,255,.03); color:var(--muted); font-size:13px; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Crown Maids | Charlotte, NC Cleaning</title>
+
+<style>
+:root{
+  --purple:#4b2e83;
+  --gold:#fbbf24;
+  --bg:#0f0a1a;
+  --card:#1a1328;
+  --text:#f8f5ff;
+  --muted:#cfc6e6;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:linear-gradient(180deg,#1b1033,var(--bg));
+  color:var(--text);
+}
+
+.wrap{max-width:1000px;margin:auto;padding:20px}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  margin-bottom:20px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:800;
+  font-size:18px;
+}
+
+.logo{
+  font-size:26px;
+}
+
+.btn{
+  padding:10px 14px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
+  border:1px solid rgba(255,255,255,.15);
+  background:rgba(255,255,255,.05);
+  color:var(--text);
+}
+
+.btn.primary{
+  background:linear-gradient(135deg,var(--gold),#ffd977);
+  color:#2b1a00;
+  border:none;
+}
+
+.hero{
+  background:var(--card);
+  padding:25px;
+  border-radius:18px;
+  margin-bottom:20px;
+}
+
+.hero h1{
+  margin:0 0 10px;
+  font-size:34px;
+}
+
+.sub{
+  color:var(--muted);
+}
+
+.section{
+  background:var(--card);
+  padding:20px;
+  border-radius:18px;
+  margin-bottom:20px;
+}
+
+.section h2{
+  margin-top:0;
+}
+
+.grid{
+  display:grid;
+  gap:15px;
+}
+
+@media(min-width:768px){
+  .grid-4{grid-template-columns:repeat(4,1fr)}
+  .grid-2{grid-template-columns:repeat(2,1fr)}
+}
+
+.card{
+  background:rgba(255,255,255,.05);
+  padding:15px;
+  border-radius:14px;
+}
+
+.card h3{
+  margin-top:0;
+}
+
+.muted{
+  color:var(--muted);
+}
+
+.pill{
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.2);
+  margin:5px 5px 0 0;
+  font-size:13px;
+  color:var(--muted);
+}
+
+.footer{
+  text-align:center;
+  font-size:13px;
+  color:var(--muted);
+  margin-top:30px;
+}
+</style>
 </head>
+
 <body>
-  <div class="wrap">
+<div class="wrap">
 
-    <!-- NAV -->
-    <div class="nav">
-      <div class="brand">
-        <span style="font-size:20px;">👑</span>
-        <span>The Crown Maids</span>
-        <span class="badge">Charlotte, NC</span>
-      </div>
-      <div class="btns">
-        <a class="btn" href="tel:+19805500569">Call</a>
-        <a class="btn" href="sms:+19805500569">Text</a>
-        <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdTKA8ozNHEaG_W0F4mcfI0EROK9l0uw4avXK8lACwza4IjsA/viewform?usp=preview" target="_blank" rel="noopener">Book Now</a>
-      </div>
-    </div>
-
-    <!-- HERO -->
-    <div class="hero">
-      <div class="card">
-        <h1>Royalty-Level Cleaning<br/>Without Royal Prices</h1>
-        <p class="sub">
-          Professional house cleaning for <strong>Charlotte, NC</strong> and surrounding areas.
-          Fast, reliable service with eco-friendly options.
-        </p>
-      </div>
-    </div>
-
-    <!-- PRICING SECTION -->
-    <div class="card section">
-      <h2>Our Pricing</h2>
-      <p class="muted">Transparent pricing. Final quotes confirmed after reviewing your home details.</p>
-
-      <div class="grid">
-        <div class="mini card" style="padding:14px;">
-          <h3>Standard Cleaning</h3>
-          <p><strong>Starting at $179</strong></p>
-        </div>
-
-        <div class="mini card" style="padding:14px;">
-          <h3>Deep Cleaning</h3>
-          <p><strong>Starting at $279</strong></p>
-        </div>
-
-        <div class="mini card" style="padding:14px;">
-          <h3>Move-In / Move-Out</h3>
-          <p><strong>Starting at $319</strong></p>
-        </div>
-
-        <div class="mini card" style="padding:14px;">
-          <h3>Airbnb Turnover</h3>
-          <p><strong>Starting at $155</strong></p>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2>Add-Ons</h2>
-        <div class="pillrow">
-          <span class="pill">Inside Fridge – $40</span>
-          <span class="pill">Inside Oven – $50</span>
-          <span class="pill">Inside Cabinets – $60</span>
-          <span class="pill">Extra Bathroom – $25</span>
-          <span class="pill">Extra Bedroom – $20</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- FOOTER -->
-    <div class="footer">
-      © <span id="y"></span> The Crown Maids • Charlotte, NC • Call/Text: (980) 550-0569 •
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdTKA8ozNHEaG_W0F4mcfI0EROK9l0uw4avXK8lACwza4IjsA/viewform?usp=preview" target="_blank" rel="noopener">Book Online</a>
-      <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-    </div>
-
+<div class="nav">
+  <div class="brand">
+    <div class="logo">👑</div>
+    <div>The Crown Maids</div>
   </div>
+
+  <div>
+    <a class="btn" href="tel:+19805500569">Call</a>
+    <a class="btn" href="sms:+19805500569">Text</a>
+    <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdTKA8ozNHEaG_W0F4mcfI0EROK9l0uw4avXK8lACwza4IjsA/viewform?usp=preview" target="_blank">Book Now</a>
+  </div>
+</div>
+
+<div class="hero">
+  <h1>Royalty-Level Cleaning Without Royal Prices</h1>
+  <p class="sub">Professional residential cleaning services in Charlotte, NC.</p>
+</div>
+
+<div class="section">
+  <h2>Services</h2>
+  <div class="grid grid-4">
+    <div class="card">
+      <h3>Standard Cleaning</h3>
+      <p class="muted">Perfect for regular upkeep and recurring service.</p>
+    </div>
+    <div class="card">
+      <h3>Deep Cleaning</h3>
+      <p class="muted">Ideal for first-time or detailed cleanings.</p>
+    </div>
+    <div class="card">
+      <h3>Move-In / Move-Out</h3>
+      <p class="muted">Thorough empty-home cleaning.</p>
+    </div>
+    <div class="card">
+      <h3>Airbnb Turnovers</h3>
+      <p class="muted">Quick and reliable short-term rental resets.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Pricing</h2>
+  <div class="grid grid-4">
+    <div class="card">
+      <h3>Standard Cleaning</h3>
+      <p><strong>Starting at $179</strong></p>
+    </div>
+    <div class="card">
+      <h3>Deep Cleaning</h3>
+      <p><strong>Starting at $279</strong></p>
+    </div>
+    <div class="card">
+      <h3>Move-In / Move-Out</h3>
+      <p><strong>Starting at $319</strong></p>
+    </div>
+    <div class="card">
+      <h3>Airbnb Turnover</h3>
+      <p><strong>Starting at $155</strong></p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:20px;">Popular Add-Ons</h3>
+  <div>
+    <span class="pill">Inside Fridge – $40</span>
+    <span class="pill">Inside Oven – $50</span>
+    <span class="pill">Inside Cabinets – $60</span>
+    <span class="pill">Extra Bathroom – $25</span>
+    <span class="pill">Extra Bedroom – $20</span>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Book Your Cleaning</h2>
+  <p class="muted">Click below to request your appointment. We confirm pricing and availability before scheduling.</p>
+  <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdTKA8ozNHEaG_W0F4mcfI0EROK9l0uw4avXK8lACwza4IjsA/viewform?usp=preview" target="_blank">Book Now</a>
+</div>
+
+<div class="footer">
+© <span id="year"></span> The Crown Maids • Charlotte, NC • (980) 550-0569
+</div>
+
+</div>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
